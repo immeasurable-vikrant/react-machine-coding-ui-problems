@@ -29,7 +29,7 @@ const DigitalClock: React.FC = () => {
 
 					return { sec, min, hr };
 				});
-			}, 1000); // Update every second for better performance
+			}, 100); // Update every second for better performance
 		} else {
 			if (timerIdRef.current) {
 				clearInterval(timerIdRef.current);
